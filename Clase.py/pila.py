@@ -9,11 +9,11 @@ def esta_vacia(pila):
 
 def apilar(pila, elemento):  # Push
     pila.append(elemento)
-    print(f"Se apiló: {elemento}")
+    print(f"Se apiló: {elemento}")#La linea anterior apilo el objeto y esta linea afirma que se realizara la acccion 
 
 def desapilar(pila):  # Pop
-    if not esta_vacia(pila):
-        elemento = pila.pop()
+    if not esta_vacia(pila):#Condicional
+        elemento = pila.pop()#Funcion inversa
         print(f"Se desapiló: {elemento}")
         return elemento
     else:
@@ -22,7 +22,7 @@ def desapilar(pila):  # Pop
 def ver_tope(pila):  # Peek
     if not esta_vacia(pila):
         print(f"Elemento en el tope: {pila[-1]}")
-        return pila[-1]
+        return pila[-1]#Ultima seccion 
     else:
         print("La pila está vacía.")
 
